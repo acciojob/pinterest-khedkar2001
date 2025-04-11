@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinterest Hero Section</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .hero-content {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .hero-image {
+      flex: 1;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .hero-text {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .hero-text a {
+      padding: 12px 24px;
+      background-color: #e60023;
+      color: white;
+      text-decoration: none;
+      border-radius: 24px;
+      font-weight: bold;
+      width: fit-content;
+      transition: background 0.3s ease;
+    }
+
+    .hero-text a:hover {
+      background-color: #ad081b;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="https://storage.googleapis.com/acciojob-open-file-collections/pinterest.png" alt="Pinterest Hero Image">
+      </div>
+      <div class="hero-text">
+        <h1>Discover New Ideas</h1>
+        <p>Explore millions of ideas for every part of your life, from what to cook to what to wear to how to decorate your home.</p>
+        <a href="#">Explore Now</a>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>
